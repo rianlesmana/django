@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - MathShop</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+
+    <div class="d-flex flex-column justify-content-center align-items-center mb-5">
+        <a class="navbar-brand fw-bold fs-4 mb-4 mt-5" href="/"><span class="me-3 ms-2 text-danger"><i class="bi bi-shop"></i></span>MathShop</a>
+        <!--Form Login-->
+        <div style="width: 400px;" class="border p-4">
+            <p class="fs-4 fw-bold text-center">Daftar di MathShop</p>
+            <form class="d-flex flex-column mb-5">
+                <label for="username">Username:</label>
+                <input class="form-control mb-4" type="text" name="username" placeholder="Masukan nama pengguna!">
+                <label for="email">E-mail:</label>
+                <input class="form-control mb-4" type="text" name="username" placeholder="Masukan email!">
+                <label for="password">Password:</label>
+                <input class="form-control mb-4" type="password" name="password" placeholder="Masukan kata sandi!">
+                <button class="btn btn-danger fw-bold fs-5" type="submit">Mendaftar</button>
+            </form>
+            <p class="text-center text-secondary">Alternatif lain:</p>
+            <div class="d-flex justify-content-between">
+                <a style="width: 160px; height: 45px; border-radius: 5px; padding-top: 5px" class="nav-link fw-bold border border-secondary text-center" href="#"><i class="bi bi-facebook text-primary me-2 fs-5"></i>Facebook</a>
+                <a style="width: 160px; height: 45px; border-radius: 5px; padding-top: 5px" class="nav-link fw-bold border border-secondary text-center" href="#"><i class="bi bi-google text-primary me-2 fs-5"></i>Google</a>
+            </div>
+            <div class="mt-5">
+                <p class="text-center">Sudah punya akun? <a href="/login/">Login sekarang!</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
